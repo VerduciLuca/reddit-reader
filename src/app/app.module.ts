@@ -6,7 +6,7 @@ import {HttpClientModule} from '@angular/common/http'
 //componenti creati
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
+import { HeaderComponent } from './header/header.component';
 import { ListComponent } from './list/list.component';
 import { FavouritesComponent } from './components/favourites/favourites.component';
 import { CardComponent } from './components/card/card.component';
