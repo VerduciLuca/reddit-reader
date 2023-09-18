@@ -1,0 +1,23 @@
+<h2>Your favourites</h2>
+<ul>
+  <li *ngFor="let post of favs">
+    <div class="card">
+      <img class="post-img" src="{{post.thumbnail.includes('http')? post.thumbnail : './assets/placeholder.png'}}" alt="post thumbnail">
+      <div class="post-text">
+        <span>{{post.title}}</span>
+        <span class="small">Author: {{post.author}}</span>
+        <span class="small">{{post.created}}</span>
+      </div>
+      <div class="spacer"></div>
+      <div class="btn-container">
+        <button (click)="storage.toggleFavourites(post)">{{storage.isFavourite(post)? "★":"☆"}}</button>
+        <a href="{{post.url}}">
+          <button>📎</button>
+        </a>
+        <a href="{{'https://www.reddit.com/'+ post.permalink}}">
+          <button>🔗</button>
+        </a>
+      </div>
+    </div>
+  </li>
+</ul>

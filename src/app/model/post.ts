@@ -1,5 +1,6 @@
 export interface Post {
-  name: string;
+  [x: string]: any;
+  author: string;
   title: string;
   created: number;
   url: string;

@@ -1,0 +1,55 @@
+.post-img{
+  width: 5em;
+  height: 5em;
+  object-fit: cover;
+  border-radius:0.3em ;
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
+  background-color: #494949;
+  border-radius: 1em;
+  padding: 1em;
+  margin: 1em;
+  gap: 1em;
+}
+
+.post-text{
+  display: flex;
+  flex-direction: column;
+  margin-left: 2em;
+  gap: 1em;
+}
+
+.btn-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 1em;
+}
+
+button{
+  background: none;
+  border: none;
+  color: orangered;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+li{
+  list-style: none;
+  margin-bottom: 4px;
+}
+ul{
+  padding: 0;
+}
+
+.spacer{
+  flex-grow: 1;
+}
+
+.small{
+  font-size: 0.8em;
+  font-weight: 200;
+}

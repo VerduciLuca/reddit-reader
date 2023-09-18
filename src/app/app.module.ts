@@ -7,14 +7,18 @@ import {HttpClientModule} from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { ListComponent } from './components/list/list.component';
+import { ListComponent } from './list/list.component';
+import { FavouritesComponent } from './components/favourites/favourites.component';
+import { CardComponent } from './components/card/card.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ListComponent
+    ListComponent,
+    FavouritesComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
