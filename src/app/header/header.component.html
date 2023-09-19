@@ -3,6 +3,6 @@
   <div class="spacer"></div>
   <div class="btn-div">
     <a routerLink="./home" class="feed-btn">Feed</a>
-    <a routerLink="./favourites">★ {{storage.favourites.length}}</a>
+    <a routerLink="./favourites">★ {{(storage.favouritesSubject | async)!.length}}</a>
   </div>
 </header>

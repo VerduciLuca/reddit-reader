@@ -1,5 +1,6 @@
 <h2>Your favourites</h2>
 <ul>
+  <!-- <app-card *ngFor="let post of favs"></app-card> -->
   <li *ngFor="let post of favs">
     <div class="card">
       <img class="post-img" src="{{post.thumbnail.includes('http')? post.thumbnail : './assets/placeholder.png'}}" alt="post thumbnail">
@@ -21,3 +22,4 @@
     </div>
   </li>
 </ul>
+
