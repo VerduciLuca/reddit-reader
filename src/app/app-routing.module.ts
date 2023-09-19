@@ -5,7 +5,9 @@ import { FavouritesComponent } from './components/favourites/favourites.componen
 
 const routes: Routes = [
   {path:'home', component:ListComponent},
-  {path:'favourites', component:FavouritesComponent}
+  {path:'favourites', component:FavouritesComponent},
+  {path:'', redirectTo:'/home', pathMatch:'full'},
+  {path:'**',redirectTo:  '/home'}
 ];
 
 @NgModule({

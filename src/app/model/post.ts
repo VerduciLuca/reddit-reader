@@ -6,5 +6,6 @@ export interface Post {
   url: string;
   permalink: string;
   id:string;
-  thumbnail:string
+  thumbnail:string;
+  isFavourite?: boolean;
 }

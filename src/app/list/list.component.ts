@@ -13,7 +13,12 @@ export class ListComponent implements OnInit {
   constructor (private reddit: RedditService, public storage:StorageService){}
 
   ngOnInit(): void {
-    this.reddit.getRedditPosts().subscribe(childrenData => this.posts = childrenData);
+    this.reddit.getRedditPosts().subscribe(childrenData => {
+      this.posts= childrenData;
+      for (const post of this.posts) {
+        post.isFavourite = this.storage.isFavourite(post)
+      }
+    });
     console.log(this.posts);
 
   }

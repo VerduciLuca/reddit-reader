@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { ListComponent } from './list/list.component';
 import { FavouritesComponent } from './components/favourites/favourites.component';
 import { CardComponent } from './components/card/card.component';
+import { TimestampToDatePipe } from './pipes/timestamp-to-date.pipe';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { CardComponent } from './components/card/card.component';
     HeaderComponent,
     ListComponent,
     FavouritesComponent,
-    CardComponent
+    CardComponent,
+    TimestampToDatePipe
   ],
   imports: [
     BrowserModule,

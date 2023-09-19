@@ -5,11 +5,12 @@
     <span>{{post.title}}</span>
     <br>
     <span class="small">Author: u/{{post.author}}</span>
-    <span class="small">{{post.created}}</span>
+    <span class="small">{{post.created | timestampToDate : false}}</span>
   </div>
   <div class="spacer"></div>
   <div class="btn-container">
-    <button (click)="storage.toggleFavourites(post)">{{storage.isFavourite(post)? "★":"☆"}}</button>
+    <!-- <button (click)="storage.toggleFavourites(post)">{{storage.isFavourite(post)? "★":"☆"}}</button> -->
+    <button (click)="storage.toggleFavourites(post)">{{post.isFavourite?"★":"☆" }}</button>
     <a href="{{post.url}}">
       <button>📎</button>
     </a>

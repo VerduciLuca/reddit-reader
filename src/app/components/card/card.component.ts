@@ -12,7 +12,7 @@ import { StorageService } from 'src/app/services/storage.service';
 })
 export class CardComponent {
 
-  @Input({})
+
   posts: Post[] = []
   constructor (private reddit: RedditService, public storage:StorageService){}
 
